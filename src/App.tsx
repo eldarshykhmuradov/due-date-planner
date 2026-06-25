@@ -14,10 +14,10 @@ const VELOCITY_SHEET_URL =
   "https://docs.google.com/spreadsheets/d/REPLACE_WITH_YOUR_SHEET";
 
 const PLATFORM_PEOPLE: Record<string, string[]> = {
-  iOS: ["Paweł", "Emil"],
-  Android: ["Maciej"],
-  Backend: ["Natalia", "Tomek"],
-  Frontend: ["Zofia", "Kuba"],
+  iOS: ["Dev A", "Dev B"],
+  Android: ["Dev C"],
+  Backend: ["Dev D", "Dev E"],
+  Frontend: ["Dev F", "Dev G"],
 };
 
 const NUM_BLOCKS = 4;
@@ -71,9 +71,9 @@ const offDay = (n: number): string => iso(addDays(START_DATE, n));
 
 // Sample OOO + holidays, relative to the current week so the demo lines up.
 const OOO: OOOEntry[] = [
-  { person: "Natalia", start: offDay(0), end: offDay(2) },
-  { person: "Paweł", start: offDay(8), end: offDay(9) },
-  { person: "Emil", start: offDay(14), end: offDay(20) },
+  { person: "Dev D", start: offDay(0), end: offDay(2) },
+  { person: "Dev A", start: offDay(8), end: offDay(9) },
+  { person: "Dev B", start: offDay(14), end: offDay(20) },
 ];
 const HOLIDAYS: Holiday[] = [{ date: offDay(16), name: "Holiday" }];
 const HOLIDAY_SET = new Set(HOLIDAYS.map((h) => h.date));
